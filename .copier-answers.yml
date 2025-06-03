@@ -22,6 +22,6 @@ repo_description: ''
 repo_name: SMI CUSTOM
 repo_slug: smi-custom
 repo_website: https://www.quartile.co
-use_pyproject_toml: false
+use_pyproject_toml: true
 use_ruff: true
 
