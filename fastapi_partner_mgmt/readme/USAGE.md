@@ -1,4 +1,4 @@
-To create a user via the API, you can make a request from your system or
+To create a partner via the API, you can make a request from your system or
 an API platform. You can also verify the endpoint by clicking the
 **Docs** URL link.
 

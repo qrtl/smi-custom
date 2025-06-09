@@ -22,8 +22,7 @@ FastAPI Partner Management
 
 |badge1| |badge2| |badge3|
 
-This module enables user creation via API calls. Note: It currently
-offers only minimal functionality and is not yet production-ready.
+This module enables partner creation via API calls.
 
 **Table of contents**
 
@@ -34,6 +33,7 @@ Configuration
 =============
 
 -  Go to **FastAPI** > **FastAPI Endpoint**. Create an endpoint.
+-  Select **"Partner API** for an app.
 -  Go to Preference under user menu item.
 -  Generate api key under Account Security tab.
 
@@ -43,8 +43,8 @@ adhere to the configuration steps outlined in this module.
 Usage
 =====
 
-To create a user via the API, you can make a request from your system or
-an API platform. You can also verify the endpoint by clicking the
+To create a partner via the API, you can make a request from your system
+or an API platform. You can also verify the endpoint by clicking the
 **Docs** URL link.
 
 Then, you can make a request.
