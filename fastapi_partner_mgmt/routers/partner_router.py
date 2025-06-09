@@ -15,22 +15,14 @@ router = APIRouter()
 
 class PartnerCreate(BaseModel):
     name: str
-    login: str
-    password: str
 
 
 @router.post("/partner/create")
-def create_user(
+def create_partner(
     data: PartnerCreate, env: Annotated[Environment, Depends(authenticated_partner_env)]
 ):
-    User = env["res.users"]
-    if User.search_count([("login", "=", data.login)]):
-        raise HTTPException(400, "Login already exists")
-    new_user = User.create(
-        {
-            "name": data.name,
-            "login": data.login,
-            "password": data.password,
-        }
-    )
-    return {"id": new_user.id, "name": new_user.name}
+    Partner = env["res.partner"]
+    if Partner.search_count([("name", "=", data.name)]):
+        raise HTTPException(400, "Partner already exists")
+    partner = Partner.create({"name": data.name})
+    return {"id": partner.id, "name": partner.name}

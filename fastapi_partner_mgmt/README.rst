@@ -33,7 +33,12 @@ offers only minimal functionality and is not yet production-ready.
 Configuration
 =============
 
-Go to **FastAPI** > **FastAPI Endpoint**. Create an endpoint.
+-  Go to **FastAPI** > **FastAPI Endpoint**. Create an endpoint.
+-  Go to Preference under user menu item.
+-  Generate api key under Account Security tab.
+
+This module depends on the 'fastapi_auth_user_apikey'. Therefore, please
+adhere to the configuration steps outlined in this module.
 
 Usage
 =====
