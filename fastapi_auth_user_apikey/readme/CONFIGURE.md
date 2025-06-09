@@ -1,0 +1,4 @@
+- Go to the FastAPI menu.
+- Create a new endpoint or select an existing one.
+- Set the Authentication Method to API Key.
+- Select the users who are allowed to call the API using an API key.
