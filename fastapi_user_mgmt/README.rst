@@ -17,13 +17,12 @@ FastAPI User
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-qrtl%2Fsmi--custom-lightgray.png?logo=github
-    :target: https://github.com/qrtl/smi-custom/tree/18.0/fastapi_create_user
+    :target: https://github.com/qrtl/smi-custom/tree/18.0/fastapi_user_mgmt
     :alt: qrtl/smi-custom
 
 |badge1| |badge2| |badge3|
 
-This module enables user creation via API calls. Note: It currently
-offers only minimal functionality and is not yet production-ready.
+This module enables user creation via API calls.
 
 **Table of contents**
 
@@ -33,28 +32,22 @@ offers only minimal functionality and is not yet production-ready.
 Configuration
 =============
 
-Go to **FastAPI** > **FastAPI Endpoint**. Create an endpoint as shown in
-the image below.
+-  Go to **FastAPI** > **FastAPI Endpoint**. Create an endpoint.
+-  Select **User API** for the app.
+-  Go to Preference under user menu item.
+-  Generate api key under Account Security tab.
 
-|image1|
-
-.. |image1| image:: https://raw.githubusercontent.com/qrtl/smi-custom/18.0/fastapi_create_user/static/description/endpoint.png
+This module depends on the 'fastapi_auth_user_apikey'. Therefore, please
+adhere to the configuration steps outlined in this module.
 
 Usage
 =====
 
 To create a user via the API, you can make a request from your system or
 an API platform. You can also verify the endpoint by clicking the
-**Docs** URL link, as shown in the image below.
+**Docs** URL link.
 
-|image1|
-
-Then, you can make a request as shown in the image below.
-
-|image2|
-
-.. |image1| image:: https://raw.githubusercontent.com/qrtl/smi-custom/18.0/fastapi_create_user/static/description/docs_url.png
-.. |image2| image:: https://raw.githubusercontent.com/qrtl/smi-custom/18.0/fastapi_create_user/static/description/api_request.png
+Then, you can make a request.
 
 Bug Tracker
 ===========
@@ -62,7 +55,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/qrtl/smi-custom/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/qrtl/smi-custom/issues/new?body=module:%20fastapi_create_user%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/qrtl/smi-custom/issues/new?body=module:%20fastapi_user_mgmt%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -77,6 +70,6 @@ Authors
 Maintainers
 -----------
 
-This module is part of the `qrtl/smi-custom <https://github.com/qrtl/smi-custom/tree/18.0/fastapi_create_user>`_ project on GitHub.
+This module is part of the `qrtl/smi-custom <https://github.com/qrtl/smi-custom/tree/18.0/fastapi_user_mgmt>`_ project on GitHub.
 
 You are welcome to contribute.

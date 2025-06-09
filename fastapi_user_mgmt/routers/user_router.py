@@ -8,7 +8,7 @@ from pydantic import BaseModel
 
 from odoo.api import Environment
 
-from odoo.addons.fastapi.dependencies import odoo_env
+from odoo.addons.fastapi.dependencies import authenticated_partner_env
 
 router = APIRouter()
 
@@ -19,12 +19,13 @@ class UserCreate(BaseModel):
     password: str
 
 
-@router.post("/users")
-def create_user(data: UserCreate, env: Annotated[Environment, Depends(odoo_env)]):
+@router.post("/user/create")
+def create_user(
+    data: UserCreate, env: Annotated[Environment, Depends(authenticated_partner_env)]
+):
     User = env["res.users"]
     if User.search_count([("login", "=", data.login)]):
         raise HTTPException(400, "Login already exists")
-
     new_user = User.create(
         {
             "name": data.name,
