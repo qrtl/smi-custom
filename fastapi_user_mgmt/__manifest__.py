@@ -1,7 +1,7 @@
 # Copyright 2025 Quartile (https://www/quartile.co)
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
-    "name": "FastAPI User",
+    "name": "FastAPI User Management",
     "version": "18.0.1.0.0",
     "category": "API",
     "website": "https://www.quartile.co",
