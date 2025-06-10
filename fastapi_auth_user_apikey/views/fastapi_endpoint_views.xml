@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="fastapi_endpoint_form_view">
+        <field name="name">fastapi.endpoint.form (in fastapi)</field>
+        <field name="model">fastapi.endpoint</field>
+        <field name="inherit_id" ref="fastapi.fastapi_endpoint_form_view" />
+        <field name="arch" type="xml">
+            <span name="configuration" position="after">
+                <group string="User API-key Authentication">
+                    <field name="use_user_apikey_auth" widget="boolean_toggle" />
+                    <field
+                        name="apikey_auth_user_ids"
+                        invisible="not use_user_apikey_auth"
+                        widget="many2many_tags"
+                    />
+                </group>
+            </span>
+        </field>
+    </record>
+</odoo>
