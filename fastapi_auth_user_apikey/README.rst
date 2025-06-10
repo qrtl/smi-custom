@@ -1,6 +1,6 @@
-========================
-FastAPI Auth User Apikey
-========================
+=========================
+FastAPI Auth User API Key
+=========================
 
 .. 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -13,17 +13,17 @@ FastAPI Auth User Apikey
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
     :target: https://odoo-community.org/page/development-status
     :alt: Beta
-.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
-    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
-    :alt: License: AGPL-3
+.. |badge2| image:: https://img.shields.io/badge/licence-LGPL--3-blue.png
+    :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
+    :alt: License: LGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-qrtl%2Fsmi--custom-lightgray.png?logo=github
     :target: https://github.com/qrtl/smi-custom/tree/18.0/fastapi_auth_user_apikey
     :alt: qrtl/smi-custom
 
 |badge1| |badge2| |badge3|
 
-This module serves as the base for user authentication using API keys in
-FastAPI connections.
+This module adds an option to FastAPI endpoints to authenticate access
+using the API keys of associated users.
 
 **Table of contents**
 
@@ -33,10 +33,14 @@ FastAPI connections.
 Configuration
 =============
 
--  Go to the FastAPI menu.
+-  Go to the FastAPI Endpoint menu item.
 -  Create a new endpoint or select an existing one.
--  Set the Authentication Method to API Key.
--  Select the users who are allowed to call the API using an API key.
+-  Select 'Use User API-key Authentication'.
+-  Select the users who are allowed to access the endpoint using their
+   API key.
+
+**Note**: Make sure the selected users have generated their API keys
+under Account Security in 'My Profile'.
 
 Bug Tracker
 ===========
@@ -55,6 +59,14 @@ Authors
 -------
 
 * Quartile
+
+Contributors
+------------
+
+-  `Quartile <https://www.quartile.co>`__:
+
+   -  Aung Ko Ko Lin
+   -  Yoshi Tashiro
 
 Maintainers
 -----------

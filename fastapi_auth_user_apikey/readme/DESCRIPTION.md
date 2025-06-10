@@ -1,2 +1,2 @@
-This module serves as the base for user authentication using API keys in
-FastAPI connections.
+This module adds an option to FastAPI endpoints to authenticate access using the API
+keys of associated users.

@@ -6,11 +6,11 @@
         <field name="inherit_id" ref="fastapi.fastapi_endpoint_form_view" />
         <field name="arch" type="xml">
             <span name="configuration" position="after">
-                <group>
-                    <field name="auth_method" />
+                <group string="User API-key Authentication">
+                    <field name="use_user_apikey_auth" widget="boolean_toggle" />
                     <field
-                        name="user_ids"
-                        invisible="auth_method != 'api_key'"
+                        name="apikey_auth_user_ids"
+                        invisible="not use_user_apikey_auth"
                         widget="many2many_tags"
                     />
                 </group>
