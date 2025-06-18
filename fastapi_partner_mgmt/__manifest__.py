@@ -1,5 +1,5 @@
-# Copyright 2025 Quartile (https://www/quartile.co)
-# License LGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+# Copyright 2025 Quartile (https://www.quartile.co)
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "FastAPI Partner Management",
     "version": "18.0.1.0.0",
@@ -7,6 +7,6 @@
     "website": "https://www.quartile.co",
     "author": "Quartile",
     "license": "AGPL-3",
-    "depends": ["fastapi_auth_user_apikey"],
+    "depends": ["fastapi", "partner_line_attribute"],
     "installable": True,
 }
