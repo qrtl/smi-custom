@@ -1,0 +1,1 @@
+This module enables partner creation via API calls.
