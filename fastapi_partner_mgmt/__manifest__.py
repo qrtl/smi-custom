@@ -7,6 +7,6 @@
     "website": "https://www.quartile.co",
     "author": "Quartile",
     "license": "AGPL-3",
-    "depends": ["fastapi", "partner_line_attribute"],
+    "depends": ["fastapi", "fastapi_partner_mgmt_field"],
     "installable": True,
 }

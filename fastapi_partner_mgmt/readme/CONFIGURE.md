@@ -3,4 +3,5 @@
 - Go to Preference under user menu item.
 - Generate api key under Account Security tab.
 
-This module depends on the 'fastapi_auth_user_apikey'. Therefore, please adhere to the configuration steps outlined in this module.
+The partner schema used in this module should be extended in the
+fastapi_partner_mgmt_field module, which is a dependency of this module.
